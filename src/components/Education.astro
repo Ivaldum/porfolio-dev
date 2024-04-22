@@ -1,0 +1,29 @@
+---
+import EducationItem from "./EducationItem.astro";
+const EDUCATION = [
+  {
+    date: "Actualmente...",
+    title: "Ingenieria en sistemas de informacion",
+    company: "UTN Frcu",
+    description: "Cursando el ultimo año de la carrera",
+    link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Duracion: 27 semanas",
+    title: "Carrera de desarrollador Front End React",
+    company: "CoderHouse",
+    description:
+      "En esta carrera de Front End aprenderás a crear un sitio web, y te sumergirás en las mejores prácticas del diseño web, trabajando con HTML y CSS. Además, sabrás cómo programar con Javascript y React Js, lo cual te permitirá realizar sitios más complejos, dinámicos y escalables. Al finalizar, la carrera podrás desarrollarte como Front End Developer.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EDUCATION.map((education) => (
+      <li class="">
+        <EducationItem {...education} />
+      </li>
+    ))
+  }
+</ol>
