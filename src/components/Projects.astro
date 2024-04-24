@@ -4,6 +4,7 @@ import NextJS from "./icons/NextJS.astro";
 import Tailwind from "./icons/Tailwind.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
+import AstroF from "./icons/Astro.astro";
 
 const TAGS = {
   NEXT: {
@@ -15,6 +16,11 @@ const TAGS = {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
+  },
+  ASTROF: {
+    name: "Astro",
+    class: "bg-[#e85115] text-white",
+    icon: AstroF,
   },
 };
 const PROJECTS = [
@@ -28,12 +34,12 @@ const PROJECTS = [
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "High Society",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Desarrollo de aplicacion web para mi productora de eventos, contiene informacion de los eventos realizados y de las proximas fechas programadas",
+    link: "https://visionary-frangollo-760997.netlify.app/",
+    image: "/projects/HighSociety.jpg",
+    tags: [TAGS.ASTROF, TAGS.TAILWIND],
   },
 ];
 ---
